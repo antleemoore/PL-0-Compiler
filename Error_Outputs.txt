@@ -1,0 +1,127 @@
+var x, y;
+begin	
+  x := y + 56;
+end.
+
+// Error 1- Used = instead of :=
+var x, y;
+begin	
+  x = y + 56;
+end.
+
+
+// Error 2- = must be followed by a number.
+const x =;
+var x, y;
+begin	
+  x := y + 56;
+end.
+
+// Error 3- Identifier must be followed by =.
+const x;
+var x, y;
+begin	
+  x := y + 56;
+end.
+
+// Error 4- Identifier expected.
+const;
+var x, y;
+begin	
+  x := y + 56;
+end.
+
+// Error 5- Semicolon or comma missing.
+var x, y
+begin	
+  x := y + 56;
+end.
+
+// Error 9- Period expected.
+var x, y;
+begin	
+  x := y + 56;
+end
+
+
+// Error 11- Undeclared identifier.
+var x, y;
+begin	
+  z := y + 56;
+end.
+
+// Error 16- then expected.
+var x, y;
+if y > x
+begin	
+  x := y + 56;
+end.
+
+// Error 17- Semicolon or end expected.
+var x, y;
+begin	
+  x := y + 56;
+.
+
+// Error 18- do expected.
+var x, y;
+while x > y
+begin	
+  x := y + 56;
+end.
+
+// Error 19- Variable Redeclared.
+var x, y, x;
+while x > y
+begin	
+  x := y + 56;
+end.
+
+// Error 20- Relational operator expected.
+var x, y;
+while x do
+begin	
+  x := y + 56;
+end.
+
+// Error 22- Right parenthesis missing.
+var x, y;
+while (x > y do
+begin	
+  x := y + 56;
+end.
+
+// Error 23- The preceding factor cannot begin with this symbol.
+Already added invalid symbols in hw2
+
+// Error 24- An expression cannot begin with this symbol.
+Already added invalid symbols in hw2
+
+// Error 25- This number is too large.
+const z = 1234567;
+var x, y;
+begin	
+  x := y + 56;
+end.
+
+// Error 26- Read not followed by identifier.
+var x, y;
+read;
+begin	
+  x := y + 56;
+end.
+
+// Error 27- Constant after Read.
+const z = 5;
+var x, y;
+read z;
+begin	
+  x := y + 56;
+end.
+
+// Error 28- Write not followed by identifier.
+var x, y;
+write;
+begin	
+  x := y + 56;
+end.
